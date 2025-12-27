@@ -1,0 +1,105 @@
+/* General body styling */
+body {
+  font-family: 'Press Start 2P', cursive;
+  text-align: center;
+  background-color: #3a0069;
+  margin: 0;
+  padding-top: 50px;
+}
+
+/* Heading */
+h1 {
+  font-size: 2rem;
+
+  color: #dda2ff;
+}
+
+/* Button container */
+div.homepage{
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+  padding: 10em;
+}
+
+/* Buttons */
+#start, #hs {
+  background-color: #917291;      /* Default background */
+  color: rgb(48, 0, 49);
+  border: 2px groove rgb(240, 166, 238);
+  padding: 12px 24px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer; 
+  transition: transform 0.2s ease;
+  width: 200px; 
+
+}
+
+
+button:hover { 
+  transform: scale(1.05);        
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
+
+div.questions{
+    visibility: hidden;
+    display: flex;
+   flex-direction: column;
+   gap: 15px;
+  align-items: center; 
+  margin: 0 300px 0 300px;
+}
+
+#question {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  line-height: 2em;
+}
+#nextQues , #restart {
+  display: flex;
+  justify-content: center;
+  align-items: center;  /* vertically center text */
+  background-color: rgb(41, 0, 41);
+  color: rgb(255, 180, 255);
+  border: 2px dashed rgb(255, 180, 255);
+  padding: 10px 20px;
+  margin-top: 2rem;
+  width: fit-content;   /* auto size to content */
+  font-size: 0.60rem;   /* smaller font for aesthetic */
+  font-family: 'Press Start 2P', cursive; /* if you're using pixel font */
+  cursor: pointer;
+  align-self: center;
+  border-radius: 4px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  
+}
+
+#nextQues:hover, #restart:hover{
+  background-color: rgb(60, 0, 60);
+  transform: scale(1.05);
+}
+
+.options{
+  border: 2px solid black;
+  padding: 10px 10px 10px 10px;
+  background-color: #f0d5ff;
+  color: rgb(11, 0, 67);
+  width: 300px;
+  ;
+
+}
+div.finalMsg{
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem;
+  
+}
